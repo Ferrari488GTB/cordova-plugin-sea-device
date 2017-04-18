@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-sea-device",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cordova设备插件。支持Android、iOS平台。",
   "cordova": {
     "id": "cordova-plugin-sea-device",
@@ -20,8 +20,10 @@
     "Cordova",
     "device",
     "exit",
+    "exitApp",
     "exit app",
     "退出",
+    "退出应用",
     "退出app"
   ],
   "author": "Sea Breeze",
