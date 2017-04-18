@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-sea-device",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cordova设备插件。支持Android、iOS平台。",
   "cordova": {
     "id": "cordova-plugin-sea-device",
