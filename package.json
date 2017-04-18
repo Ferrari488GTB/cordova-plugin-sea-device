@@ -1,0 +1,16 @@
+{
+  "name": "cordova-plugin-sea-device",
+  "version": "1.0.0",
+  "description": "Cordova设备插件。支持Android、iOS平台。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Cordova",
+    "device",
+    "exit"
+  ],
+  "author": "SeaBreeze",
+  "license": "ISC"
+}

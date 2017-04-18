@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-sea-device" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>SeaDevice</name>
+	<js-module name="SeaDevice" src="www/SeaDevice.js">
+		<clobbers target="cordova.plugins.seaDevice" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="SeaDevice">
+				<param name="android-package" value="com.sea.plugins.SeaDevice" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml" />
+		<source-file src="src/android/SeaDevice.java" target-dir="src/com/sea/plugins" />
+	</platform>
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="SeaDevice">
+				<param name="ios-package" value="SeaDevice" />
+			</feature>
+		</config-file>
+		<source-file src="src/ios/SeaDevice.h" />
+		<source-file src="src/ios/SeaDevice.m" />
+	</platform>
+</plugin>
