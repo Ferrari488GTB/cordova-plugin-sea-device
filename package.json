@@ -2,15 +2,29 @@
   "name": "cordova-plugin-sea-device",
   "version": "1.0.0",
   "description": "Cordova设备插件。支持Android、iOS平台。",
-  "main": "index.js",
+  "cordova": {
+    "id": "cordova-plugin-sea-device",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ferrari488GTB/cordova-plugin-sea-device.git"
   },
   "keywords": [
     "Cordova",
     "device",
-    "exit"
+    "exit",
+    "exit app",
+    "退出",
+    "退出app"
   ],
-  "author": "SeaBreeze",
-  "license": "ISC"
+  "author": "Sea Breeze",
+  "license": "ISC",
+  "homepage": "https://github.com/Ferrari488GTB/cordova-plugin-sea-device"
 }
