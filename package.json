@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-sea-device",
-  "version": "1.0.2",
-  "description": "Cordova设备插件。支持Android、iOS平台。",
+  "version": "1.0.3",
+  "description": "Cordova设备插件。支持Android、iOS平台。提供退出应用等功能。搜索关键词 : exit app、exitApp",
   "cordova": {
     "id": "cordova-plugin-sea-device",
     "platforms": [
