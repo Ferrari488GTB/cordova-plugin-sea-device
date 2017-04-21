@@ -19,4 +19,20 @@ cordova plugin add cordova-plugin-sea-device
 ```javascript
 cordova.plugins.seaDevice.exitApp();
 ```
+## 打电话
+```javascript
+if(cordova.plugins.seaDevice){
+    cordova.plugins.seaDevice.call(
+        "18812345678",
+        function(data){
+            // 成功 
+        },
+        function(errorMsg){
+            // 失败
+        }
+    );
+}else{
+    alert("设备未就绪");
+}
+```
 
