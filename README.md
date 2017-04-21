@@ -35,4 +35,6 @@ if(cordova.plugins.seaDevice){
     alert("设备未就绪");
 }
 ```
+## 联系作者
+shatanhaifeng@163.com
 
