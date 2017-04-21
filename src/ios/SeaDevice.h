@@ -8,6 +8,8 @@
   // Member variables go here.
 }
 
-- (void)exitApp:(CDVInvokedUrlCommand*)command;
+-(void)exitApp:(CDVInvokedUrlCommand *)command;
+
+-(void)call:(CDVInvokedUrlCommand *)command;
 
 @end

@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-sea-device",
-  "version": "1.0.3",
-  "description": "Cordova设备插件。支持Android、iOS平台。提供退出应用等功能。搜索关键词 : exit app、exitApp",
+  "version": "1.0.4",
+  "description": "Cordova设备插件。支持Android、iOS平台。提供退出应用、打电话等功能。",
   "cordova": {
     "id": "cordova-plugin-sea-device",
     "platforms": [
@@ -24,7 +24,9 @@
     "exit app",
     "退出",
     "退出应用",
-    "退出app"
+    "退出app",
+    "打电话",
+    "tel"
   ],
   "author": "Sea Breeze",
   "license": "ISC",
