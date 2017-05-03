@@ -6,6 +6,7 @@ import android.net.Uri;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
 
+import org.apache.cordova.PermissionHelper;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -35,17 +36,21 @@ public class SeaDevice extends CordovaPlugin {
     private void call(String telephoneNumber,CallbackContext callbackContext){
         if(telephoneNumber!=null&&telephoneNumber.length()>0){
             Intent intent= new Intent();
-            intent.setAction(Intent.ACTION_CALL);
+            intent.setAction("android.intent.action.CALL");
             intent.setData(Uri.parse("tel:"+telephoneNumber));
-            cordova.getActivity().startActivity(intent);
-            JSONObject result = new JSONObject();
-            try {
-                result.put("code",'1');
-                result.put("msg","正在通话");
-            } catch (JSONException e) {
-                e.printStackTrace();
+            if(PermissionHelper.hasPermission(this,"android.permission.CALL_PHONE")) {
+                this.cordova.getActivity().startActivity(intent);
+                JSONObject result = new JSONObject();
+                try {
+                    result.put("code", '1');
+                    result.put("msg", "正在通话");
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                callbackContext.success(result);
+            }else{
+                PermissionHelper.requestPermission(this,100,"android.permission.CALL_PHONE");
             }
-            callbackContext.success(result);
         }else{
             callbackContext.error("电话号码不能为空");
         }
