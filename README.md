@@ -20,6 +20,7 @@ cordova plugin add cordova-plugin-sea-device
 cordova.plugins.seaDevice.exitApp();
 ```
 ## 打电话
+Android 6.0及以上提供动态打开通话权限功能。
 ```javascript
 if(cordova.plugins.seaDevice){
     cordova.plugins.seaDevice.call(
